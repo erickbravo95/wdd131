@@ -1,0 +1,105 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: "Comfortaa", sans-serif;
+}
+
+
+.yellow{
+    color: #FDF853;
+    font-size: 75%;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    background-color: #174E70 ;
+    color: #FFFFFF;
+    padding: 30px;
+}
+
+/* <----------------------NAV------------------------------------> */
+
+nav{
+    background-color: #333333;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav a{
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a:hover{
+    color: #333333;
+    background-color: #FFFFFF;
+    transition: 0.5s;
+}
+
+/* <----------------------------------------------------------> */
+
+main{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+#picerick{
+    text-align: right;
+    padding: 40px;
+}
+
+
+h2{
+    background-color: #174E70;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: medium;
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.card{
+    border: 3px solid #bebcbc;
+    border-radius: 10px;
+    padding: 0%;
+}
+
+.card ul{
+    margin: 50%  30px 50% 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+}
+
+#content{
+    text-align: end;
+}
+/* <----------------------------------------------------------> */
+
+footer{
+    background-color: #174E70 ;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Larger Views ******************************/
+
+@media (min-width: 640px) {
+	nav ul {
+		display: flex;
+	}
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
