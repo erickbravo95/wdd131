@@ -66,6 +66,8 @@ main{
 
 #p1{
     padding: 30px;
+    align-content: center;
+    justify-content: center;
 }
 
 #card2{
@@ -76,6 +78,8 @@ main{
 #p2{
     padding: 30px;
     grid-column: 2/3;
+    align-content: center;
+    justify-content: center;
 
 }
 
@@ -86,6 +90,7 @@ main{
 
 #picerick, #picecua{
     padding: 30px;
+    align-items: center;
 }
 
 hr{
