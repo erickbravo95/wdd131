@@ -9,7 +9,12 @@ body{
 }
 
 
-.yellow{
+#lastModified{
+    color: #FDF853;
+    font-size: 75%;
+}
+
+#yellow{
     color: #FDF853;
     font-size: 75%;
 }
@@ -51,15 +56,44 @@ nav a:hover{
 main{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    padding: 30px;
 }
 
-#picerick{
-    text-align: right;
-    padding: 40px;
+#card1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
+#p1{
+    padding: 30px;
+}
+
+#card2{
+    display: grid;
+    grid-template-columns: 1fr 2fr ;
+}
+
+#p2{
+    padding: 30px;
+    grid-column: 2/3;
+
+}
+
+#titlex{
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+#picerick, #picecua{
+    padding: 30px;
+}
+
+hr{
+    grid-column: 1/3;
+}
 
 h2{
+    grid-column: 1/3;
     background-color: #174E70;
     color: #FFFFFF;
     text-align: center;
@@ -81,9 +115,7 @@ h2{
     align-items: normal;
 }
 
-#content{
-    text-align: end;
-}
+
 /* <----------------------------------------------------------> */
 
 footer{

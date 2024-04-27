@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    
     <title>WDD 131 - Dynamic Web Fundamentals - Erick Bravo</title>
 </head>
 <body>
     
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - <span class="yellow">Erick Bravo Toledo</span></h1>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span id="yellow">Erick Bravo Toledo</span></h1>
     </header>
     <nav>
         <ul>
@@ -27,16 +28,23 @@
 
     <main>
         <section class="card">
+            <div id="card1">
             <h2>About Me</h2>
-            <p>Hi everyone! this is my second BYU-I course and I'm so excited to learn to code in HTML and CSS. I'm pursuing a degree in
+
+            <p id="p1">Hi everyone! this is my second BYU-I course and I'm so excited to learn to code in HTML and CSS. I'm pursuing a degree in
                 Applied Technology, I want to be a Full Stack Web Developer. I'm single, I have been a member of the church since a was 11yo and
                 I love to swim, watch movies and travel. Nice to meet Y'all!!</p>
-            <div id="picerick"><img src="images/rsz_cv_foto.jpg" alt="Erick-Picture"></div>
-            <h2>Guayaquil, Ecuador</h2>
+
+            <img id="picerick" src="images/rsz_cv_foto.jpg" alt="Erick-Picture">
+            </div>
+            <div id="card2">
+            <h2 id="titlex">Guayaquil, Ecuador</h2>
             <hr>
+
             <img id="picecua" src="images/rsz_flag_of_ecuador.png" alt="Ecuadorian Flag">
-            <p>Official Flag of Ecuador</p>
-            <p id="content">Guayaquil, officially Santiago de Guayaquil, is the largest city in Ecuador and also the nation's economic capital and main port. The city is the capital of Guayas Province and the seat of Guayaquil Canton. The city is located on the west bank of the Guayas River, which flows into the Pacific Ocean at the Gulf of Guayaquil.</p>
+
+            <p id="p2">Guayaquil, officially Santiago de Guayaquil, is the largest city in Ecuador and also the nation's economic capital and main port. The city is the capital of Guayas Province and the seat of Guayaquil Canton. The city is located on the west bank of the Guayas River, which flows into the Pacific Ocean at the Gulf of Guayaquil.</p>
+            </div>
         </section>
 
         <section class="card">
@@ -54,7 +62,7 @@
 
     <footer>
         <p>@<span id="currentyear"></span> ツ Erick Enrique Bravo ツ Ecuador</p>
-        <span class="yellow"><p id="lastModified"></p></span>
+        <p id="lastModified"></p>
     </footer>
 
 </body>
