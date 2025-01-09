@@ -1,0 +1,36 @@
+:root {
+    --White: #FFF;
+    --Black: #000;
+    --headandfoot: #333333;
+    --main: #CCCCCC;
+}
+
+/* body{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+} */
+
+.navigation{
+    background-color: var(--Black);
+    list-style: none;
+    display: flex;
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--White);
+}
+
+
+footer,
+header{
+    background-color: var(--headandfoot);
+    color: var(--White);
+    grid-row: 1/2;
+}
+
+footer{
+    text-align: center;
+}

@@ -3,13 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Main site for the WDD 131 - Dynamic Web Fundamentals class">
+    <meta name="author" content="Erick Bravo">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    
+    <title>WDD 131 - Dynamic Web Fundamentals - Erick Bravo</title>
 </head>
 <body>
+
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span id="yellow">Erick Bravo Toledo</span></h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/erick-bravo-toledo-33a05522b/">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/">Canvas</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/25?lang=spa&id=p26#p26">Scripture</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <h1>
-            HOLA MUNDO!! segunda prueva carita
-        </h1>
+        <section class="card">
+            <div id="card1">
+                <h2>About Me</h2>
+
+                <p id="p1">Hi everyone! this is my second BYU-I course and I'm so excited to learn to code in HTML and CSS. I'm pursuing a degree in
+                 Applied Technology, I want to be a Full Stack Web Developer. I'm single, I have been a member of the church since a was 11yo and
+                 I love to swim, watch movies and travel. Nice to meet Y'all!!</p>
+
+                <img id="picerick" src="images/rsz_cv_foto.jpg" alt="Erick-Picture">
+            </div>
+            <div id="card2">
+                <h2 id="titlex">Guayaquil, Ecuador</h2>
+                <hr>
+
+                <img id="picecua" src="images/rsz_flag_of_ecuador.png" alt="Ecuadorian Flag">
+
+                <p id="p2">Guayaquil, officially Santiago de Guayaquil, is the largest city in Ecuador and also the nation's economic capital and main port. The city is the capital of Guayas Province and the seat of Guayaquil Canton. The city is located on the west bank of the Guayas River, which flows into the Pacific Ocean at the Gulf of Guayaquil.</p>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Image Placeholder</a></li>
+            </ul>
+        </section>
     </main>
+
+    <footer>
+        <p>@<span id="currentyear"></span> ツ Erick Enrique Bravo ツ Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+<script src="scripts/getdates.js"></script>
 </html>
