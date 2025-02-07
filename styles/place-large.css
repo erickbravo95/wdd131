@@ -30,4 +30,16 @@
     h2{
         text-align: start;
     }
+
+    .weather ul{
+        padding-top: 3rem;
+    }
+
+    svg{
+        display: none;
+    }
+
+    .active::after{
+        content:"❄️";
+    }
 }
