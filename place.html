@@ -19,8 +19,14 @@
 
     <main>
       
-        <img src="images/hero-large.webp" alt="Shibuya at night">
-     
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1000px )" srcset="images/hero-large.webp">
+                <source media="(min-width: 800px )" srcset="images/hero-medium.webp">
+                <img src="images/hero-small.webp" alt="Shibuya at night" width="740px" height="250">
+            </picture>
+        </div>
+
         <div class="data">
             <h2>Data</h2>
             <ul>
