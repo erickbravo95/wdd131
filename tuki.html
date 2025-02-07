@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Change Label with JavaScript</title>
+</head>
+<body>
+    <label id="myLabel" for="name">Enter Name:</label>
+    <input type="text" id="name">
+    <button onclick="updateLabel()">Change Label</button>
+
+    <script>
+        function updateLabel() {
+            document.getElementById("myLabel").innerText = "New Label Text:";
+        }
+    </script>
+</body>
+</html>

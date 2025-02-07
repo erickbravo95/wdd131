@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+    --black:#000;
+    --white:#fff;
+    --text:"Montserrat";
+    --title:"Russo One";
+}
+
+/* HEADER */
+
+header{
+    font-size: 1.5rem;
+}
+
+header,
+footer{
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;    
+    padding: 2rem;
+    font-family: var(--title);
+}
+
+/* MAIN */
+
+main{
+    font-family: var(--text);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.data,
+.weather{
+    text-align: center;
+}
+
+.data{
+    border-bottom: 1px solid #bebcbc;
+}
+
+h2{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: var(--white);
+}
+
+label{
+    font-weight: bold;
+}
+
+img{
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+div{
+    padding: 1.5rem;
+}
+
+.weather ul{
+    padding-top: 3rem;
+}
+
+ul{
+    padding-top: 1rem;
+    list-style: none;
+}
+
+li{
+    padding: 5px;
+}
+
+/* FOOTER */

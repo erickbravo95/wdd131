@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="W03 Assignment: Country Page">
+        <meta name="author" content="Erick Bravo">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap" rel="stylesheet">
+        <title>Country Page</title>
+    </head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>   
+
+    <main>
+      
+        <img src="images/hero-large.webp" alt="Shibuya at night">
+     
+        <div class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><label>Area: </label><span id="area"></span></li>
+                <li><label>Population: </label><span id="population"></span></li>
+                <li><label>Capital: </label><span id="capital"></span></li>
+                <li><label>Languages: </label><span id="languages"></span></li>
+                <li><label>Currency: </label><span id="currency"></span></li>
+                <li><label>Time Zone: </label><span id="time"></span></li>
+                <li><label>Calling Code: </label><span id="calling"></span></li>
+                <li><label>Internet TLD: </label><span id="internet"></span></li>
+            </ul>
+        </div>
+
+        <div class="weather">
+            <h2>Weather ❄️</h2>
+
+            <ul>
+                <li><label>Temperature: </label><span id="temperature"></span></li>
+                <li><label>Conditions: </label><span id="conditions"></span></li>
+                <li><label>Wind: </label><span id="wind"></span></li>
+                <li><label>Wind Chill: </label><span id="chill"></span></li>
+            </ul> 
+
+        </div>
+    </main>
+
+
+    <footer>
+        <p>@<span id="currentyear"></span> 👾 Erick Enrique Bravo 👾 Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>   
+</body>
+<script src="scripts/place.js" defer></script>
+<script src="scripts/getdates.js" defer></script>
+</html>
