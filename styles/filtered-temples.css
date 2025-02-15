@@ -1,0 +1,113 @@
+:root{
+    --primario: #3C0A64;
+    --blanco: #FFF;
+    --negro: #000;
+
+}
+
+*{
+    margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: Roboto;
+}
+
+header,
+footer{
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+
+/* header */
+
+.menu{
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--blanco);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.menu::before{
+    content: "☰";
+}
+
+.menu.open::before{
+    content: "❌";
+}
+
+header{
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+}
+
+header,
+main{
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a{
+    display: none;
+    text-align: center;
+    font-size: larger;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+nav a:hover{
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+.open a {
+	display: block;
+}
+
+.active::before{
+    content:"🚩";
+}
+
+/* main */
+
+main{
+   margin: 1rem auto;
+   max-width: 960px;
+   padding: .5rem;
+   text-align: center;
+}
+
+.container{
+    display:grid; 
+    grid-template-columns: repeat(1, minmax(200px, 1fr)); 
+    grid-gap: 15px;
+    place-items: center;
+}
+
+figure img{
+   width: 100%;
+}
+
+figure{
+    padding: 1rem; 
+}
+
+figcaption{
+    color: var(--primario);
+}
+
+/* footer */
+
+footer{
+    text-align: center;
+}
+
