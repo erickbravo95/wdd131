@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="W05 Assignment: Product Review Form">
+<meta name="author" content="Erick Bravo">
+<title>Product Review Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link href="styles/normalize.css" rel="stylesheet">
+<link href="styles/small.css" rel="stylesheet">
+<link href="styles/medium.css" rel="stylesheet">
+<link href="styles/large.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<header>
+        <h1>Product Review</h1>
+    </header>
+    
+
+    <main>
+        
+    <form method="get" action="review.html" class="wf1">
+        <fieldset>
+
+            <label for="productName">Product Name</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Choose a Product ... &#9662;</option>
+            </select>
+
+            <div>Overall Rating</div>
+            <label><input type="radio" name="overallRating" required> &star;</label>
+            <label><input type="radio" name="overallRating" > &star;&star;</label>
+            <label><input type="radio" name="overallRating" > &star;&star;&star;</label>
+            <label><input type="radio" name="overallRating" > &star;&star;&star;&star;</label>
+            <label><input type="radio" name="overallRating" > &star;&star;&star;&star;&star;</label>
+
+            <label for="dateOfInstallation">Date of installation</label>
+            <input id="dateOfInstallation" type="date" name="installation" required>
+
+            <div>Which features did you find useful in the product?</div>
+            <div class="italic">(Check all that apply)</div>
+            <label><input type="checkbox" name="design" value="yes"> Design</label>
+            <label><input type="checkbox" name="durability" value="yes"> Durability</label>
+            <label><input type="checkbox" name="easeOfUse" value="yes"> Ease of Use</label>
+            <label><input type="checkbox" name="performance" value="yes">  Performance</label>
+
+            <label for="writtenReview">Written Review (Optinal)</label>
+            <textarea id="writtenReview" name="writtenReview" rows="7" cols="47"></textarea>
+
+            <label for="yourName">Your Name (Optinal)</label>
+            <input id="yourName" type="text" name="yourName" >
+
+        </fieldset>
+
+
+        <input type="submit" value="Post Review">
+
+    </form>
+    </main>
+    
+    <footer>
+        <p>@<span id="currentyear"></span> 👾 Erick Enrique Bravo 👾 Ecuador</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/form.js"></script>
+</body>
+</html>
